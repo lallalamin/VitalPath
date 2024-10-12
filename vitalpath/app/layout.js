@@ -2,6 +2,10 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ClerkProvider } from '@clerk/nextjs'
 import { ChakraProvider } from '@chakra-ui/react';
+import { ThemeProvider } from "@mui/material";
+
+import { createTheme } from '@mui/material/styles';
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,7 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ChakraProvider>
+
       <ClerkProvider>
         <html lang="en">
           <body
@@ -31,6 +35,6 @@ export default function RootLayout({ children }) {
           </body>
         </html>
       </ClerkProvider>
-    </ChakraProvider>
+
   );
 }

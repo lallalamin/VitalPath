@@ -1,4 +1,3 @@
-'use client'
 import { AppBar, Button, Toolbar, Typography } from "@mui/material";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 

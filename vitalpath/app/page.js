@@ -4,13 +4,15 @@ import {
   SignedOut,
   UserButton
 } from '@clerk/nextjs'
+import { Box, Typography } from '@mui/material';
 
-import Hero from '../component/Hero.jsx';
+import Hero from '@/component/Hero.jsx';
+import Navbar from '@/component/Navbar.jsx';
 
 export default function Home() {
   return (
     <div>
-      <Hero/>
+      <Hero />
       <SignedOut>
         <SignInButton />
       </SignedOut>
@@ -20,3 +22,5 @@ export default function Home() {
     </div>
   );
 }
+
+
