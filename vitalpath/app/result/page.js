@@ -37,4 +37,4 @@ return (
 
 }
 
-export default page
+export default Page;
