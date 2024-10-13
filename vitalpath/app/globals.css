@@ -99,6 +99,10 @@ html {
   font-style: normal;
 }
 
-body{
-  background:rgb(229, 234, 235);
+#header{
+  background:rgb(233, 233, 234);
+  background-image: url('/v870-tang-36.jpg'); /* Path to your background image */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
 }

@@ -12,19 +12,20 @@ const Hero = () => {
         alignItems: 'center',
       }}
     >
-      <Box sx={{ textAlign: 'center', mt: 4 }}>
+      <Box sx={{ textAlign: 'center', mt: 5 }}>
         <Typography variant="h2" sx={{ mb: 5, color: '#0096FF' }} >
           WELCOME
         </Typography>
         <Typography variant="h3" sx={{ mb: 4 }}>
-          Review your daily habits with us!        
+          Review your health status with us!        
         </Typography>
-        <Typography variant="body1" sx={{ mb: 5 }}>
-          We are going to help you asses your habits and the way you currently<br />
-          feel using open source data from medical research in just a view minutes.
+        <Typography variant="h5" sx={{ mb: 5 }}>
+          We are going to help you evaluate your habits<br /> 
+          using open source data from medical research in just a few minutes.
         </Typography>
       </Box>
     </div>
+    
   );
 };
 
