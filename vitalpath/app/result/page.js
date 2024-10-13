@@ -1,7 +1,8 @@
 "use client"
 import React, { useState } from 'react'
 
-const page = () => {
+
+const Page = () => {
     const [prediction, setPrediction] = useState(null);
 
 const handleSubmit = async (e) => {
