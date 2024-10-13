@@ -14,12 +14,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Hero id = "header"/>
-      <SignedOut>
-        <SignInButton />
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
+
     </div>
   );
 }
