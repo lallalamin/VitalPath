@@ -12,12 +12,16 @@ const Hero = () => {
         alignItems: 'center',
       }}
     >
-      <Box sx={{ textAlign: 'center' }}>
-        <Typography variant="h2" sx={{ mb: 2 }}>
-          Welcome to VitalPath
+      <Box sx={{ textAlign: 'center', mt: 4 }}>
+        <Typography variant="h2" sx={{ mb: 5, color: '#0096FF' }} >
+          WELCOME
         </Typography>
-        <Typography variant="body1" sx={{ mb: 4 }}>
-          Your one-stop solution for flashcard learning!        
+        <Typography variant="h3" sx={{ mb: 4 }}>
+          Review your daily habits with us!        
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 5 }}>
+          We are going to help you asses your habits and the way you currently<br />
+          feel using open source data from medical research in just a view minutes.
         </Typography>
       </Box>
     </div>
