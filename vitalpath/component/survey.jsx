@@ -11,6 +11,7 @@ import {
   Paper,
   LinearProgress,
 } from "@mui/material";
+import Link from "next/link";
 
 const VitalPathSurvey = () => {
   const [currentSection, setCurrentSection] = useState(0);
@@ -35,9 +36,24 @@ const VitalPathSurvey = () => {
   const nextSection = () => setCurrentSection(currentSection + 1);
   const prevSection = () => setCurrentSection(currentSection - 1);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
+    try {
+      const response = await fetch('/api/predictDisease', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      console.log("Data from API:", data);
+
+    } catch (error) {
+      console.error('Error calling Python model:', error);
+    }
   };
 
   const renderSection = () => {
@@ -142,7 +158,9 @@ const VitalPathSurvey = () => {
             </Button>
           ) : (
             <Button variant="contained" color="primary" onClick={handleSubmit}>
-              Submit
+              <Link href={"/result"} style={{ textDecoration: 'none', color: 'inherit' }}>
+                Submit
+              </Link>
             </Button>
           )}
         </Box>
