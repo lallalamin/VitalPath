@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { ClerkProvider } from '@clerk/nextjs'
-import { ChakraProvider } from '@chakra-ui/react';
 import { ThemeProvider } from "@mui/material";
 
 import { createTheme } from '@mui/material/styles';
@@ -28,6 +27,13 @@ export default function RootLayout({ children }) {
 
       <ClerkProvider>
         <html lang="en">
+          <head>
+             <link
+              href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" 
+              rel="stylesheet">
+
+             </link>
+          </head>
           <body
             className={`${geistSans.variable} ${geistMono.variable} antialiased`}
           >
