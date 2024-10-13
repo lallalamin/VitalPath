@@ -12,6 +12,7 @@ import Navbar from '@/component/Navbar.jsx';
 export default function Home() {
   return (
     <div>
+      <Navbar />
       <Hero />
       <SignedOut>
         <SignInButton />
