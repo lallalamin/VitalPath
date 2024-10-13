@@ -1,12 +1,7 @@
 {
-  "compilerOptions": {
-    "target": "es5",                            // or your desired ECMAScript version
-    "module": "commonjs",                       // or your desired module system
-    "baseUrl": ".",                             // This is important for the paths mapping to work
+  "compilerOptions": {                            // This is important for the paths mapping to work
     "paths": {
       "@/*": ["./*"]
     }
-  },
-  "include": ["src/**/*"],                      // Adjust according to your project structure
-  "exclude": ["node_modules"]
+  }
 }
